@@ -4,215 +4,402 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>1379 Fulfillment | Pick, Pack &amp; Ship from Metro Atlanta</title>
-<meta name="description" content="1379 Fulfillment is a Metro Atlanta fulfillment and storage partner for TikTok Shop, Shopify, Etsy, Amazon and Instagram sellers, plus contractors, stagers and event companies. More cities coming.">
+<meta name="description" content="1379 Fulfillment is a Metro Atlanta fulfillment and storage partner for TikTok Shop, Shopify, Etsy, Amazon and Instagram sellers, plus contractors, stagers and event companies. Montgomery, AL coming.">
 <link rel="canonical" href="https://1379holdingsllc.github.io/fulfillment/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://1379holdingsllc.github.io/fulfillment/">
-<meta property="og:title" content="1379 Fulfillment | Metro Atlanta, more cities coming">
+<meta property="og:title" content="1379 Fulfillment | Metro Atlanta now, Montgomery coming">
 <meta property="og:description" content="Receive, store, pick, pack and ship for online sellers. Kitting, contractor receiving, staging storage and event rental off-season storage. Founding seller pricing available.">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://1379holdingsllc.github.io/fulfillment/img/warehouse-hero.webp">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
+:root{
+  --navy:#0b1f33;
+  --navy-2:#122a44;
+  --ink:#122033;
+  --muted:#5c6b7a;
+  --line:#e4e9ef;
+  --paper:#f5f7fa;
+  --white:#fff;
+  --accent:#e36a1a;
+  --accent-2:#c45510;
+  --gold:#f4c56a;
+  --ok:#1f7a4d;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(11,31,51,.08);
+}
 *{box-sizing:border-box}
-body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:#2b2118;background:#fbf6ee;line-height:1.55}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:"Source Sans 3",system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+h1,h2,h3,.brand,.step-n,.price,.mark{font-family:Outfit,system-ui,sans-serif}
 a{color:inherit}
-.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
-h1{font-size:clamp(1.9rem,4.5vw,2.8rem);margin:16px 0 8px;letter-spacing:-.02em}
-h2{font-size:clamp(1.5rem,3vw,2rem);margin:0 0 8px}
-.lead{max-width:720px;margin:0 auto;font-size:1.15rem;color:#5a4a3c}
-.sub{text-align:center;color:#5a4a3c;margin:0 0 8px}
-.topbar{position:sticky;top:0;z-index:10;background:#2b2118}
-.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:58px}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fbf6ee;font-weight:800}
-.brand .mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;background:#fff;color:#e0652b;font-weight:800;font-size:.85rem;letter-spacing:-.04em}
-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:6px}
-nav a{display:block;padding:8px 14px;border-radius:20px;text-decoration:none;color:#fbf6ee;font-weight:600}
-nav a:hover{background:#4a3a2c}
-nav a[aria-current=page]{background:#e0652b;color:#fff}
-.menu-btn{display:none;background:none;border:2px solid #fbf6ee;color:#fbf6ee;border-radius:8px;font-size:1.3rem;padding:2px 10px;cursor:pointer}
-@media(max-width:700px){
+img{max-width:100%;height:auto;display:block}
+.wrap{width:min(1120px,calc(100% - 40px));margin:0 auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(11,31,51,.96);backdrop-filter:saturate(1.2) blur(10px)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;font-weight:700;letter-spacing:-.02em}
+.mark{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;font-weight:800;font-size:.8rem}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:4px;align-items:center}
+nav a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;color:#e8eef4;font-weight:600;font-size:.95rem}
+nav a:hover{background:#1b3a57}
+nav a[aria-current=page]{background:var(--accent);color:#fff}
+nav .btn{padding:8px 16px;background:var(--accent);color:#fff;border-radius:999px}
+nav .btn:hover{background:var(--accent-2)}
+.menu-btn{display:none;background:none;border:2px solid #d7e0ea;color:#fff;border-radius:8px;font-size:1.25rem;padding:2px 10px;cursor:pointer}
+@media(max-width:760px){
   .menu-btn{display:block}
   .topbar .wrap{flex-wrap:wrap}
-  nav{display:none;width:100%;padding-bottom:10px}
+  nav{display:none;width:100%;padding-bottom:14px}
   nav.open{display:block}
-  nav ul{flex-direction:column}
+  nav ul{flex-direction:column;align-items:stretch}
+  nav .btn{text-align:center}
 }
-.hero{text-align:center;padding:56px 0 36px}
-.eyebrow{display:inline-block;background:#fdeadf;color:#a1400f;font-weight:700;font-size:.85rem;letter-spacing:.04em;text-transform:uppercase;padding:6px 12px;border-radius:20px;margin-bottom:12px}
-.hero-ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:24px}
-.btn{display:inline-block;background:#e0652b;color:#fff;font-weight:700;text-decoration:none;padding:12px 22px;border-radius:24px;border:0;cursor:pointer;font-size:1rem}
-.btn:hover{background:#c4501c}
-.btn.ghost{background:#2b2118}
-.btn.ghost:hover{background:#4a3a2c}
-.sec{padding:12px 0 28px}
-.sec>h2,.sec>.sub{text-align:center}
-.sgrid,.tgrid,.lgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:20px 0}
-.svc,.trust,.loc{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 10px rgba(60,40,20,.08)}
-.svc{border-left:5px solid #e0652b}
-.svc h3,.trust h3,.loc h3{margin:0 0 6px;font-size:1.15rem}
-.svc p,.trust p,.loc p{margin:0;color:#5a4a3c}
-.platforms{margin:10px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px}
-.platforms li{background:#fdeadf;color:#a1400f;font-size:.85rem;font-weight:600;padding:4px 10px;border-radius:20px}
-.pricing{background:#fff;border-radius:14px;box-shadow:0 2px 10px rgba(60,40,20,.08);overflow:hidden;margin:20px auto;max-width:720px}
-.pricing table{width:100%;border-collapse:collapse}
-.pricing th,.pricing td{padding:14px 20px;text-align:left;border-bottom:1px solid #f0e6d8}
-.pricing th{background:#2b2118;color:#fbf6ee;font-weight:700}
-.pricing tr:last-child td{border-bottom:0}
-.pricing td:last-child{font-weight:800;color:#c4501c;white-space:nowrap;text-align:right}
-.note{text-align:center;color:#5a4a3c;max-width:720px;margin:0 auto;font-size:.98rem}
-.loc{border-top:5px solid #e0652b;text-align:left}
-.loc.soon{border-top-color:#c4b4a4}
-.loc .status{display:inline-block;font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;background:#e8f5e6;color:#2a6a28;padding:3px 8px;border-radius:12px;margin-bottom:8px}
-.loc.soon .status{background:#f0e6d8;color:#5a4a3c}
-.trust{border-top:5px solid #e0652b}
-.contact{background:#2b2118;color:#fbf6ee;border-radius:14px;padding:36px 24px;margin:12px 0 40px}
-.contact h2{text-align:center}
-.contact .sub{color:#c9b8a6}
-.contact a{color:#ffb98f;font-weight:700;text-decoration:none}
-.contact a:hover{text-decoration:underline}
-.email-line{text-align:center;font-size:1.15rem;margin:8px 0 24px}
-form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:800px;margin:0 auto}
+
+/* Hero */
+.hero{position:relative;min-height:640px;height:86vh;max-height:900px;display:flex;align-items:flex-end;color:#fff;isolation:isolate;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:#0b1f33 center/cover no-repeat;background-image:url("img/warehouse-hero.webp")}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(8,18,30,.35) 0%,rgba(8,18,30,.55) 40%,rgba(8,18,30,.88) 100%)}
+.hero-inner{padding:120px 0 72px;max-width:760px}
+.eyebrow{display:inline-block;margin:0 0 16px;padding:6px 12px;border:1px solid rgba(255,255,255,.35);border-radius:999px;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+.hero h1{margin:0 0 16px;font-size:clamp(2.4rem,6.4vw,4.4rem);line-height:1.05;letter-spacing:-.04em;font-weight:800}
+.hero p{margin:0 0 28px;font-size:clamp(1.05rem,2vw,1.3rem);color:#e6edf4;max-width:560px}
+.cta-row{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--accent);color:#fff;font-weight:700;text-decoration:none;padding:14px 22px;border-radius:999px;border:0;cursor:pointer;font-size:1rem;font-family:inherit}
+.btn:hover{background:var(--accent-2)}
+.btn.ghost{background:transparent;border:1.5px solid rgba(255,255,255,.65);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.btn.dark{background:var(--navy)}
+.btn.dark:hover{background:var(--navy-2)}
+
+.sec,.band,#quote{scroll-margin-top:84px}
+.sec{padding:88px 0}
+.sec h2{margin:0 0 10px;font-size:clamp(1.8rem,3.4vw,2.5rem);letter-spacing:-.03em;line-height:1.15;text-align:center}
+.sec .sub{text-align:center;color:var(--muted);max-width:620px;margin:0 auto 40px;font-size:1.08rem}
+.sec.alt{background:#fff}
+
+/* How it works */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:step}
+.step{position:relative;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:28px 22px 24px;box-shadow:var(--shadow);min-height:100%}
+.step-icon{width:56px;height:56px;border-radius:14px;background:#fff3ea;color:var(--accent);display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.step-icon svg{width:28px;height:28px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.step-n{display:block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:6px}
+.step h3{margin:0 0 8px;font-size:1.2rem}
+.step p{margin:0;color:var(--muted)}
+@media(max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.steps{grid-template-columns:1fr}}
+
+/* Services + who we serve */
+.grid{display:grid;grid-template-columns:repeat(6,1fr);gap:18px}
+.grid .card{grid-column:span 2}
+@media(min-width:981px){.grid .card:nth-child(4){grid-column:2 / span 2}.grid .card:nth-child(5){grid-column:4 / span 2}}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}
+.card .icon{width:48px;height:48px;border-radius:12px;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.card .icon svg{width:24px;height:24px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.card h3{margin:0 0 8px;font-size:1.15rem}
+.card p{margin:0;color:var(--muted)}
+.pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;padding:0;list-style:none}
+.pills li{background:#eef3f8;color:var(--navy);font-size:.78rem;font-weight:600;padding:4px 9px;border-radius:999px}
+.serve{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.serve .card{text-align:center;padding:22px 14px}
+.serve .icon{margin:0 auto 12px;background:#fff3ea;color:var(--accent)}
+@media(max-width:980px){.grid{grid-template-columns:1fr 1fr}.grid .card,.grid .card:nth-child(4),.grid .card:nth-child(5){grid-column:auto}.serve{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.grid,.serve{grid-template-columns:1fr}}
+
+/* Pricing */
+.prices{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.price-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;box-shadow:var(--shadow);display:flex;flex-direction:column;min-height:100%}
+.price-card h3{margin:0 0 6px;font-size:1.05rem}
+.price-card .price{font-size:2rem;font-weight:800;letter-spacing:-.03em;line-height:1.1;margin:8px 0}
+.price-card .unit{color:var(--muted);font-weight:600;font-size:.95rem}
+.price-card p{margin:auto 0 0;color:var(--muted);font-size:.95rem}
+.price-card.featured{background:var(--navy);color:#fff;border-color:var(--navy)}
+.price-card.featured .unit,.price-card.featured p{color:#c9d6e3}
+.note{text-align:center;color:var(--muted);max-width:700px;margin:0 auto}
+@media(max-width:900px){.prices{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.prices{grid-template-columns:1fr}}
+
+/* Trust + locations */
+.trust{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.trust article{background:#fff;border-top:4px solid var(--accent);border-radius:14px;padding:22px 18px;box-shadow:var(--shadow)}
+.trust h3{margin:0 0 8px;font-size:1.05rem}
+.trust p{margin:0;color:var(--muted);font-size:.97rem}
+.locs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.loc{background:#fff;border-radius:var(--radius);padding:28px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.loc .status{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;margin-bottom:10px}
+.loc.open .status{background:#e5f6ec;color:var(--ok)}
+.loc.soon .status{background:#eef3f8;color:var(--muted)}
+.loc h3{margin:0 0 8px;font-size:1.4rem}
+.loc p{margin:0;color:var(--muted)}
+@media(max-width:900px){.trust{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.trust,.locs{grid-template-columns:1fr}}
+
+/* CTA band */
+.band{background:var(--navy);color:#fff;padding:72px 0;text-align:center}
+.band h2{margin:0 0 10px;font-size:clamp(1.8rem,3.4vw,2.6rem);letter-spacing:-.03em}
+.band p{margin:0 auto 24px;max-width:560px;color:#c9d6e3;font-size:1.1rem}
+
+/* Form */
+#quote{padding-bottom:96px}
+.form-wrap{background:#fff;border-radius:20px;box-shadow:0 16px 50px rgba(11,31,51,.1);padding:clamp(24px,4vw,44px);border:1px solid var(--line);max-width:860px;margin:0 auto}
+.form-wrap h2{margin-bottom:6px}
+.email-line{text-align:center;font-size:1.15rem;margin:0 0 28px}
+.email-line a{color:var(--accent);font-weight:700;text-decoration:none}
+.email-line a:hover{text-decoration:underline}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .full{grid-column:1/-1}
 label{display:block;font-weight:700;font-size:.9rem;margin-bottom:6px}
-input,select,textarea{width:100%;padding:12px 14px;border:0;border-radius:10px;font:inherit;background:#fff;color:#2b2118}
-textarea{min-height:110px;resize:vertical}
-.actions{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.hint{color:#c9b8a6;font-size:.9rem;margin:0}
-@media(max-width:640px){
-  form{grid-template-columns:1fr}
-  .hero{padding:36px 0 24px}
-  .pricing th,.pricing td{padding:12px 14px}
-}
-footer{text-align:center;color:#8a7868;font-size:.9rem;padding-bottom:32px}
-footer a{color:#c4501c;font-weight:600;text-decoration:none}
+input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#f8fafc;color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;background:#fff}
+textarea{min-height:120px;resize:vertical}
+.actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hint{color:var(--muted);font-size:.92rem;margin:0}
+@media(max-width:640px){form{grid-template-columns:1fr}.hero-inner{padding:96px 0 52px}}
+
+footer{padding:28px 0 40px;color:var(--muted);font-size:.92rem;text-align:center}
+footer a{color:var(--accent);font-weight:600;text-decoration:none}
+.credit{margin-top:8px;font-size:.8rem;color:#8a96a3}
 </style>
 </head>
 <body>
-<div class="topbar"><div class="wrap">
-  <a class="brand" href="../index.html"><span class="mark">1379</span>1379 Holdings LLC</a>
-  <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">&#9776;</button>
-  <nav id="nav">
-    <ul>
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="../services.html">Services</a></li>
-      <li><a href="../brands.html">Brands</a></li>
-      <li><a href="./" aria-current="page">Fulfillment</a></li>
-      <li><a href="../contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</div></div>
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><span class="mark">1379</span>1379 Fulfillment</a>
+    <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.getElementById('nav');n.classList.toggle('open');this.setAttribute('aria-expanded',n.classList.contains('open'))">&#9776;</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="../index.html">Company</a></li>
+        <li><a class="btn" href="#quote">Get a quote</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-<div class="wrap">
-  <header class="hero">
-    <p class="eyebrow">A line of 1379 Holdings LLC</p>
-    <h1>1379 Fulfillment</h1>
-    <p class="lead">Pick, pack, and ship from Metro Atlanta — built to expand nationwide, with more cities coming.</p>
-    <div class="hero-ctas">
-      <a class="btn" href="#quote">Request a founding seller quote</a>
-      <a class="btn ghost" href="#pricing">See founding pricing</a>
+<section class="hero">
+  <div class="hero-bg" role="img" aria-label="Warehouse aisles with shelving, yellow bins and packed cartons"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <p class="eyebrow">A line of 1379 Holdings LLC</p>
+      <h1>Fulfillment that looks as sharp as it ships.</h1>
+      <p>Receive, store, pick, pack, and ship from Metro Atlanta — with Montgomery, Alabama coming next. Founding seller pricing is open now.</p>
+      <div class="cta-row">
+        <a class="btn" href="#quote">Request a founding seller quote</a>
+        <a class="btn ghost" href="#pricing">See pricing</a>
+      </div>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <section class="sec" id="services">
-      <h2>Services</h2>
-      <p class="sub">Fulfillment and storage for online sellers and local businesses that need a reliable place to receive, hold, and send goods.</p>
-      <div class="sgrid">
-        <article class="svc">
-          <h3>E-commerce fulfillment</h3>
-          <p>Receive, store, pick, pack, and ship orders for online sellers who do not want to handle shipping themselves.</p>
-          <ul class="platforms">
-            <li>TikTok Shop</li>
-            <li>Shopify</li>
-            <li>Etsy</li>
-            <li>Amazon</li>
-            <li>Instagram</li>
-          </ul>
-        </article>
-        <article class="svc">
-          <h3>Kitting &amp; labeling</h3>
-          <p>Assemble kits, apply labels, and prepare products so launches and bundles go out complete and consistent.</p>
-        </article>
-        <article class="svc">
-          <h3>Contractor material receiving</h3>
-          <p>Have job materials delivered, received, and stored until your crew is ready to use them.</p>
-        </article>
-        <article class="svc">
-          <h3>Staging furniture storage</h3>
-          <p>Store furniture, décor, and signs between listings so staging inventory stays organized and ready for the next home.</p>
-        </article>
-        <article class="svc">
-          <h3>Event rental off-season storage</h3>
-          <p>Hold tables, tents, décor, and other rental gear in the slow season and get it back when bookings pick up.</p>
-        </article>
-      </div>
-    </section>
+<section class="sec alt" id="how">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Four clear steps, from the first inbound shipment to a tracking number your customer can see.</p>
+    <div class="steps">
+      <article class="step">
+        <div class="icon step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 7h13v13H3z"/><path d="M16 10h5l-2 10h-3"/><path d="M8 11v3M11 11v3"/><path d="M3 11h13"/></svg>
+        </div>
+        <span class="step-n">Step 1</span>
+        <h3>Send inventory</h3>
+        <p>Ship your products to the hub. We receive each box, check it in, and get it ready for storage.</p>
+      </article>
+      <article class="step">
+        <div class="icon step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 20V8l8-4 8 4v12"/><path d="M4 8h16M12 4v16M8 12h2M8 16h2"/></svg>
+        </div>
+        <span class="step-n">Step 2</span>
+        <h3>We store</h3>
+        <p>Inventory is organized in bins and kept ready to pick, so stock is easy to find when an order comes in.</p>
+      </article>
+      <article class="step">
+        <div class="icon step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="1" y="7" width="15" height="10" rx="2"/><path d="M16 10h3l3 3v4h-6"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+        </div>
+        <span class="step-n">Step 3</span>
+        <h3>Orders ship</h3>
+        <p>We pick, pack, and ship by the posted cutoff — same business day, or the next business day if an order arrives after cutoff.</p>
+      </article>
+      <article class="step">
+        <div class="icon step-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 14l2.2 2L16 11"/></svg>
+        </div>
+        <span class="step-n">Step 4</span>
+        <h3>Track in ShipStation</h3>
+        <p>See your stock and orders in ShipStation, so you always know what is on hand and what has already shipped.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="sec" id="pricing">
-      <h2>Founding Seller pricing</h2>
-      <p class="sub">Simple, published rates for early partners. Prepaying your first month reserves a spot.</p>
-      <div class="pricing">
-        <table>
-          <thead>
-            <tr><th>Service</th><th>Founding rate</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Pick &amp; pack</td><td>$3.00 / order</td></tr>
-            <tr><td>Each extra item in an order</td><td>$0.50</td></tr>
-            <tr><td>Receiving</td><td>$4.00 / box</td></tr>
-            <tr><td>Storage</td><td>$4.00 / bin / month</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p class="note">Your first month is prepaid. That payment reserves your spot. After that, monthly pick, pack, receiving, and storage fees are billed as work is done. A written service agreement spells out fees and terms before anything ships.</p>
-    </section>
+<section class="sec" id="services">
+  <div class="wrap">
+    <h2>Services</h2>
+    <p class="sub">Fulfillment and storage for online sellers and local businesses that need a reliable place to receive, hold, and send goods.</p>
+    <div class="grid">
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 9l9-6 9 6v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></div>
+        <h3>E-commerce fulfillment</h3>
+        <p>Receive, store, pick, pack, and ship orders for online sellers who do not want to handle shipping themselves.</p>
+        <ul class="pills"><li>TikTok Shop</li><li>Shopify</li><li>Etsy</li><li>Amazon</li><li>Instagram</li></ul>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/></svg></div>
+        <h3>Kitting &amp; labeling</h3>
+        <p>Assemble kits, apply labels, and prepare products so launches and bundles go out complete and consistent.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7V4H4v10h3"/><rect x="10" y="10" width="10" height="10" rx="1"/><path d="M3 20h7"/></svg></div>
+        <h3>Contractor material receiving</h3>
+        <p>Have job materials delivered, received, and stored until your crew is ready to use them.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg></div>
+        <h3>Staging furniture storage</h3>
+        <p>Store furniture, décor, and signs between listings so staging inventory stays organized and ready for the next home.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l8 4v5c0 5-3.5 8.5-8 9-4.5-.5-8-4-8-9V7z"/></svg></div>
+        <h3>Event rental off-season storage</h3>
+        <p>Hold tables, tents, décor, and other rental gear in the slow season and get it back when bookings pick up.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="sec" id="locations">
-      <h2>Locations</h2>
-      <p class="sub">Starting in Atlanta, with a model we can open in more cities across the country.</p>
-      <div class="lgrid">
-        <article class="loc">
-          <span class="status">Open now</span>
-          <h3>Metro Atlanta</h3>
-          <p>Our first fulfillment hub serves sellers and local businesses across the Atlanta metro area.</p>
-        </article>
-        <article class="loc soon">
-          <span class="status">Coming later</span>
-          <h3>More cities coming</h3>
-          <p>1379 Fulfillment is built to expand nationwide. Additional cities will be listed here as they open.</p>
-        </article>
-      </div>
-    </section>
+<section class="sec alt" id="who">
+  <div class="wrap">
+    <h2>Who we serve</h2>
+    <p class="sub">One hub can support sellers and local operators who need space, receiving, and outbound shipping.</p>
+    <div class="serve">
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M11 18h2"/></svg></div>
+        <h3>Online sellers</h3>
+        <p>TikTok Shop, Shopify, Etsy, Amazon, and Instagram brands.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20h16M7 20V8l5-4 5 4v12"/><path d="M10 12h4"/></svg></div>
+        <h3>Event rentals</h3>
+        <p>Off-season storage for tents, tables, décor, and party gear.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 19V9l8-5 8 5v10"/><path d="M9 19v-5h6v5"/></svg></div>
+        <h3>Stagers</h3>
+        <p>Furniture, signs, and décor held between listings.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M14 7l-2-2H4v14h16V9h-6z"/><path d="M8 12h8M8 16h5"/></svg></div>
+        <h3>Contractors</h3>
+        <p>Job materials received and stored until the crew needs them.</p>
+      </article>
+      <article class="card">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="8" width="7" height="7" rx="1"/><rect x="14" y="8" width="7" height="7" rx="1"/><path d="M10 11.5h4M7 15v3h10v-3"/></svg></div>
+        <h3>Kitting</h3>
+        <p>Brands that need kits built, labeled, and sent out complete.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
-    <section class="sec" id="trust">
-      <h2>How we work</h2>
-      <p class="sub">Clear standards so you can see how orders will be handled before you send inventory.</p>
-      <div class="tgrid">
-        <article class="trust">
-          <h3>Ship cutoff</h3>
-          <p>Orders received by the posted cutoff ship the same business day, or the next business day if they arrive after cutoff.</p>
-        </article>
-        <article class="trust">
-          <h3>Order accuracy</h3>
-          <p>Order accuracy is a core goal. We check picks against each order and track issues so they can be fixed quickly.</p>
-        </article>
-        <article class="trust">
-          <h3>Inventory visibility</h3>
-          <p>You can see your stock and orders through ShipStation, so you always know what is on hand and what has shipped.</p>
-        </article>
-        <article class="trust">
-          <h3>Written agreement</h3>
-          <p>A written service agreement covers fees, prepayment, ship times, and who is responsible if an item is lost or damaged.</p>
-        </article>
-        <article class="trust">
-          <h3>Owner-led team</h3>
-          <p>A hands-on, owner-led team runs the floor and works with the people packing your orders.</p>
-        </article>
-      </div>
-    </section>
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <h2>Founding Seller pricing</h2>
+    <p class="sub">Simple, published rates for early partners. Prepaying your first month reserves a spot.</p>
+    <div class="prices">
+      <article class="price-card featured">
+        <h3>Pick &amp; pack</h3>
+        <div class="price">$3.00</div>
+        <div class="unit">per order</div>
+        <p>The first item in each order, picked and packed for shipment.</p>
+      </article>
+      <article class="price-card">
+        <h3>Extra item</h3>
+        <div class="price">$0.50</div>
+        <div class="unit">each additional item</div>
+        <p>Added only when an order contains more than one item.</p>
+      </article>
+      <article class="price-card">
+        <h3>Receiving</h3>
+        <div class="price">$4.00</div>
+        <div class="unit">per box</div>
+        <p>Inbound boxes checked in and put away in storage.</p>
+      </article>
+      <article class="price-card">
+        <h3>Storage</h3>
+        <div class="price">$4.00</div>
+        <div class="unit">per bin / month</div>
+        <p>Monthly bin storage while inventory waits to ship.</p>
+      </article>
+    </div>
+    <p class="note">Your first month is prepaid. That payment reserves your spot. After that, monthly pick, pack, receiving, and storage fees are billed as work is done. A written service agreement spells out fees and terms before anything ships.</p>
+  </div>
+</section>
 
-    <section class="contact" id="quote">
+<section class="sec alt" id="trust">
+  <div class="wrap">
+    <h2>How we work</h2>
+    <p class="sub">Clear standards so you can see how orders will be handled before you send inventory.</p>
+    <div class="trust">
+      <article>
+        <h3>Ship cutoff</h3>
+        <p>Orders received by the posted cutoff ship the same business day, or the next business day if they arrive after cutoff.</p>
+      </article>
+      <article>
+        <h3>Order accuracy</h3>
+        <p>Order accuracy is a core goal. We check picks against each order and track issues so they can be fixed quickly.</p>
+      </article>
+      <article>
+        <h3>Inventory visibility</h3>
+        <p>You can see your stock and orders through ShipStation, so you always know what is on hand and what has shipped.</p>
+      </article>
+      <article>
+        <h3>Written agreement</h3>
+        <p>A written service agreement covers fees, prepayment, ship times, and who is responsible if an item is lost or damaged.</p>
+      </article>
+      <article>
+        <h3>Owner-led team</h3>
+        <p>A hands-on, owner-led team runs the floor and works with the people packing your orders.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="locations">
+  <div class="wrap">
+    <h2>Locations</h2>
+    <p class="sub">Starting in Metro Atlanta, with the next hub planned for Montgomery, Alabama.</p>
+    <div class="locs">
+      <article class="loc open">
+        <span class="status">Open now</span>
+        <h3>Metro Atlanta</h3>
+        <p>Our first fulfillment hub serves sellers and local businesses across the Atlanta metro area.</p>
+      </article>
+      <article class="loc soon">
+        <span class="status">Coming later</span>
+        <h3>Montgomery, AL</h3>
+        <p>The next city on the map. Montgomery will be listed as open here once that hub is ready.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Reserve your founding seller spot.</h2>
+    <p>Prepay the first month to hold space. Tell us what you ship, and we will follow up by email with next steps.</p>
+    <a class="btn" href="#quote">Request a quote</a>
+  </div>
+</section>
+
+<section class="sec" id="quote">
+  <div class="wrap">
+    <div class="form-wrap">
       <h2>Request a quote</h2>
-      <p class="sub">Tell us what you need. We will follow up by email with next steps and founding seller terms.</p>
+      <p class="sub">Tell us what you need. We will follow up by email with founding seller terms.</p>
       <p class="email-line">Email <a href="mailto:1379holdingsllc@gmail.com">1379holdingsllc@gmail.com</a></p>
       <form action="https://formsubmit.co/1379holdingsllc@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="1379 Fulfillment quote request">
@@ -266,14 +453,20 @@ footer a{color:#c4501c;font-weight:600;text-decoration:none}
           <textarea id="message" name="message" placeholder="Products, timing, or questions"></textarea>
         </div>
         <div class="full actions">
-          <button class="btn" type="submit">Send quote request</button>
+          <button class="btn dark" type="submit">Send quote request</button>
           <p class="hint">Or email us directly at 1379holdingsllc@gmail.com</p>
         </div>
       </form>
-    </section>
-  </main>
-  <footer>© 2026 1379 Holdings LLC · <a href="../index.html">Company home</a></footer>
-</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 1379 Holdings LLC · <a href="../index.html">Company home</a></p>
+    <p class="credit">Warehouse photo from Unsplash, used under the Unsplash License.</p>
+  </div>
+</footer>
 <script data-goatcounter="https://bookitall1379.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
